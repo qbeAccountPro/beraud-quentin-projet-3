@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-06-14T17:00:39.476Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="x76MPhpTfxzRpfnyYvMT" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-14T17:11:28.161Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="29WRvOHuUNu5nXSBwZlJ" version="21.3.8" type="github">
   <diagram name="Page-1" id="noyESsa5x7OZtrXB0dku">
-    <mxGraphModel dx="926" dy="1475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="996" dy="1460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -145,16 +145,19 @@
           <mxGeometry x="10" y="435" width="200" height="230" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-30" value="Profil_utilisateur" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="942.5" y="-750" width="200" height="230" as="geometry" />
+          <mxGeometry x="840" y="-750" width="270" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-52" value="Id : long PK&lt;br&gt;nom : varchar(255)&lt;br&gt;prénom : varchar(255)&lt;br&gt;e-mail : varchar(255)&lt;br&gt;mdp : varchar(255)&lt;br&gt;entreprise : varchar(255)&lt;br&gt;image_profil : varchar(255)&lt;br&gt;rôle : boolean&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-30">
-          <mxGeometry x="6" y="30" width="184" height="190" as="geometry" />
+        <mxCell id="4aoceYNehT1nNi53uhLn-52" value="Id : long PK&lt;br&gt;nom : varchar(255)&lt;br&gt;prénom : varchar(255)&lt;br&gt;e-mail : varchar(255)&lt;br&gt;mdp : varchar(255)&lt;br&gt;entreprise : varchar(255)&lt;br&gt;image_profil : varchar(255)&lt;br&gt;rôle : varchar(7) - Enum { &quot;mentor&quot;, &quot;mentoré&quot;}&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-30">
+          <mxGeometry y="15" width="254" height="170" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-40" value="Objectifs_mentorat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-750" width="200" height="230" as="geometry" />
+          <mxGeometry x="1160" y="-750" width="254" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="4aoceYNehT1nNi53uhLn-65" value="Id : long PK&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)&lt;br&gt;Id_compétences" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-40">
+          <mxGeometry x="10" y="30" width="190" height="170" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-41" value="Contrat_mentorat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1370" y="-750" width="200" height="230" as="geometry" />
+          <mxGeometry x="1460" y="-750" width="200" height="230" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-42" value="Compétences_utilisateur" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="942.5" y="-510" width="200" height="230" as="geometry" />
@@ -180,38 +183,11 @@
         <mxCell id="4aoceYNehT1nNi53uhLn-50" value="Résumé_session" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1370" y="-30" width="200" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-51" value="Profil_utilisateur" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="712.5" y="-750" width="200" height="230" as="geometry" />
+        <mxCell id="4aoceYNehT1nNi53uhLn-66" value="Compétences_requises" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-930" width="310" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-53" value="name : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="49" width="125" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-54" value="first_name : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="71" width="195" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-55" value="phone : varchar(12)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="93" width="195" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-56" value="email : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="115" width="195" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-57" value="&lt;span style=&quot;background-color: initial;&quot;&gt;mentor : boolean&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="181" width="195" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-58" value="&lt;span style=&quot;background-color: initial;&quot;&gt;mentee : boolean&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="203" width="195" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-59" value="&lt;span style=&quot;background-color: initial;&quot;&gt;company : varchar(255)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="137" width="195" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-60" value="profile_picture : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-51">
-          <mxGeometry x="5" y="159" width="175" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-61" value="objective : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="712.5" y="-498" width="175" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-62" value="description : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="712.5" y="-520" width="175" height="22" as="geometry" />
+        <mxCell id="4aoceYNehT1nNi53uhLn-67" value="Id : long PK&lt;br&gt;compétence : varchar(255)&lt;br&gt;niveau_compétence: varchar(13)&lt;br&gt;Enum { &quot;aucune&quot;, &quot;débutant&quot;, &quot;intermédiaire&quot;, &quot;avancé&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-66">
+          <mxGeometry x="5" y="35" width="330" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
