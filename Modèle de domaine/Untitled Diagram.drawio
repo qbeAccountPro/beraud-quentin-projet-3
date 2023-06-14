@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-06-14T17:31:54.754Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="p_Ax9Plghgi2ajhDbGVx" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-14T17:38:42.117Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="jKflHN0OuKsLaHUwUWRH" version="21.3.8" type="github">
   <diagram name="Page-1" id="noyESsa5x7OZtrXB0dku">
-    <mxGraphModel dx="774" dy="1380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="734" dy="1365" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -147,13 +147,13 @@
         <mxCell id="4aoceYNehT1nNi53uhLn-30" value="Profil_utilisateur" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="-748" width="270" height="188" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-52" value="Id : long PK&lt;br&gt;Id_compétences_utilisateur : long FK&lt;br&gt;nom : varchar(255)&lt;br&gt;prénom : varchar(255)&lt;br&gt;e-mail : varchar(255)&lt;br&gt;mdp : varchar(255)&lt;br&gt;entreprise : varchar(255)&lt;br&gt;image_profil : varchar(255)&lt;br&gt;rôle : varchar(7) - Enum { &quot;mentor&quot;, &quot;mentoré&quot;}&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-30">
-          <mxGeometry y="24" width="254" height="155" as="geometry" />
+        <mxCell id="4aoceYNehT1nNi53uhLn-52" value="Id : long PK&lt;br&gt;Id_compétences_utilisateur : long FK&lt;br&gt;nom : varchar(255)&lt;br&gt;prénom : varchar(255)&lt;br&gt;e-mail : varchar(255)&lt;br&gt;mdp : varchar(255)&lt;br&gt;entreprise : varchar(255)&lt;br&gt;image_profil : varchar(255)&lt;br&gt;rôle : varchar(7) -&amp;gt; Enum { &quot;mentor&quot;, &quot;mentoré&quot;}&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-30">
+          <mxGeometry y="24" width="260" height="155" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-40" value="Objectifs_mentorat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1160" y="-660" width="210" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-65" value="Id : long PK&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)&lt;br&gt;Id_compétences_requises : long FK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-40">
+        <mxCell id="4aoceYNehT1nNi53uhLn-65" value="Id : long PK&lt;br&gt;Id_compétences_requises : long FK&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-40">
           <mxGeometry x="7" y="25" width="203" height="70" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-41" value="Contrat_mentorat" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -162,14 +162,14 @@
         <mxCell id="4aoceYNehT1nNi53uhLn-86" value="Id : long PK&lt;br&gt;description : varchar(255)&lt;br&gt;objectif : varchar(255)&lt;br&gt;attentes_partagées : varchar(255)&lt;br&gt;fréquence_session : varchar(255)&lt;br&gt;durée_contrat : varchar(255)}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-41">
           <mxGeometry x="6" y="25" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-43" value="Tableau_KanBan" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-510" width="203" height="60" as="geometry" />
+        <mxCell id="4aoceYNehT1nNi53uhLn-43" value="Session_mentorat" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="930" y="-510" width="203" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-90" value="Id : long PK&lt;br&gt;Id_objectif : long FK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-43">
+        <mxCell id="4aoceYNehT1nNi53uhLn-90" value="Id : long PK&lt;br&gt;date :&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-43">
           <mxGeometry x="3.5" y="27" width="203" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-44" value="Metriques_session" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1460" y="-610" width="200" height="170" as="geometry" />
+          <mxGeometry x="1380" y="-610" width="320" height="120" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-45" value="Métriques_session" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="940" y="-270" width="200" height="230" as="geometry" />
@@ -189,13 +189,13 @@
         <mxCell id="4aoceYNehT1nNi53uhLn-66" value="Compétences_requises" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1160" y="-930" width="310" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-67" value="Id : long PK&lt;br&gt;compétence : varchar(255)&lt;br&gt;niveau_compétence: varchar(13)&lt;br&gt;Enum { &quot;aucune&quot;, &quot;débutant&quot;, &quot;intermédiaire&quot;, &quot;avancé&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-66">
+        <mxCell id="4aoceYNehT1nNi53uhLn-67" value="Id : long PK&lt;br&gt;compétence : varchar(255)&lt;br&gt;niveau_compétence: varchar(13) -&amp;gt; Enum { &quot;aucune&quot;, &quot;débutant&quot;, &quot;intermédiaire&quot;, &quot;avancé&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-66">
           <mxGeometry x="5" y="24" width="330" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-88" value="Compétences_utilisateur" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="832.5" y="-930" width="310" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="4aoceYNehT1nNi53uhLn-89" value="Id : long PK&lt;br&gt;compétence : varchar(255)&lt;br&gt;niveau_compétence: varchar(13)&lt;br&gt;Enum { &quot;aucune&quot;, &quot;débutant&quot;, &quot;intermédiaire&quot;, &quot;avancé&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-88">
+        <mxCell id="4aoceYNehT1nNi53uhLn-89" value="Id : long PK&lt;br&gt;compétence : varchar(255)&lt;br&gt;niveau_compétence: varchar(13) -&amp;gt; Enum { &quot;aucune&quot;, &quot;débutant&quot;, &quot;intermédiaire&quot;, &quot;avancé&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-88">
           <mxGeometry x="5" y="24" width="330" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-91" value="Objectif" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -203,6 +203,15 @@
         </mxCell>
         <mxCell id="4aoceYNehT1nNi53uhLn-92" value="Id : long PK&lt;br&gt;objectif : varchar(255)&lt;br&gt;statut : varchar(30)&lt;br&gt;Enum {&quot;A faire&quot;,&amp;nbsp; &quot;En cours de réalisation&quot;, &quot;Terminé&quot;, &quot;Validé&quot;}&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="1167" y="-389" width="353" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="4aoceYNehT1nNi53uhLn-96" value="Id : long PK&lt;br&gt;Id_session : long FK&lt;br&gt;objectif_réalisé : boolean&amp;nbsp;&lt;br&gt;satisfaction : varchar(1) -&amp;gt; Enum {&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;}&lt;br&gt;amélioration_personnelle : varchar(1)&amp;nbsp;-&amp;gt; Enum {&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1383" y="-587" width="313" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4aoceYNehT1nNi53uhLn-97" value="Tableau_KanBan" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="-500" width="203" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4aoceYNehT1nNi53uhLn-98" value="Id : long PK&lt;br&gt;Id_objectif : long FK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=0" vertex="1" parent="4aoceYNehT1nNi53uhLn-97">
+          <mxGeometry x="3.5" y="27" width="203" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
